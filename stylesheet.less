@@ -1,9 +1,3 @@
-/* ===============================
-   IMPORT CSS
-   =============================== */
-
-  @import "@{templateCommon}/paypal.less";
-  @import "@{templateCommon}/dropbox.less";
 
 /* ===============================
    TEMPLATE CSS
@@ -131,9 +125,24 @@ blockquote:after {
    CUSTOM CSS
    =============================== */
 
+  .centeralign{
+    background-color: @color-swatch4;
+    height:100px;
+    max-width:180px;
+    padding:0px 0px 0px 20px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+  }
 
 .navbar {
-  background-color:darken(@color-swatch2,75%);
+  background-color:@color-swatch4;
   height:100%;
 }
 
@@ -152,8 +161,11 @@ blockquote:after {
   background-color: @color-swatch1;
   max-width: 1200px;
   width: 90%;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0px;
+  -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .main {
@@ -355,7 +367,6 @@ footer p {
 
 .widget.extendednavigation {
   position: relative;
-  max-width: 960px;
   margin:0px auto;
   display:table;
 }
@@ -389,13 +400,14 @@ footer p {
   float: left;
   display: block;
   text-align: left;
+  border-right: 1px solid;
 }
 
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
   display: block;
-  padding: 6px 30px;
+  padding: 36px 70px;
   font-family:@font-swatch6-font-family;
-  font-size:@font-swatch6-font-size;
+  font-size:@font-swatch2-font-size;
   font-weight: @font-swatch6-font-weight;
   color: @font-swatch6-color;
   line-height:@font-swatch6-line-height;
@@ -604,8 +616,8 @@ footer p {
   font-size:@font-swatch8-font-size;
   font-weight: @font-swatch8-font-weight;
   line-height:@font-swatch8-line-height;
+  letter-spacing:@font-swatch8-letter-spacing;
   color: @font-swatch8-color;
-  letter-spacing: @font-swatch8-letter-spacing;
   display: inherit;
   border-bottom: 0;
   padding-bottom: 0;
@@ -618,8 +630,8 @@ footer p {
   font-size:@font-swatch9-font-size;
   font-weight: @font-swatch9-font-weight;
   line-height:@font-swatch9-line-height;
+  letter-spacing:@font-swatch9-letter-spacing;
   color: @font-swatch9-color;
-  letter-spacing: @font-swatch9-letter-spacing;
   display: inline-block;
 }
 
@@ -744,17 +756,19 @@ footer p {
   font-weight:@font-swatch7-font-weight;
   line-height: @font-swatch7-line-height;
   letter-spacing: @font-swatch7-letter-spacing;
-  background-color: @font-swatch6-background-color;
   color: @font-swatch7-color;
   text-decoration: none;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.button button:hover 
 {
-  background-color: darken(@font-swatch6-background-color-hover,5%);
+  background-color: @font-swatch7-background-color-hover;
   cursor: pointer;
 }
 
@@ -1123,14 +1137,13 @@ hr.line.align-right {
   list-style: none;
   background-image: image('/images/twitterlogo.png');
   background-repeat:no-repeat;
-  background-color:@color-swatch4;
   background-position: top 17px center;
-  padding-top:80px;
+  background-color:@color-swatch4;
   margin-top:20px;
   margin:0px auto;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .widget.twitter a {
@@ -1152,8 +1165,7 @@ hr.line.align-right {
     padding: 0;
     margin: 0;
     margin-bottom:20px;
-    border-bottom:40px solid @color-swatch4;
-    background-color:@color-swatch2;
+    background-color:@color-swatch1;
     -webkit-border-bottom-right-radius: 3px;
     -webkit-border-bottom-left-radius: 3px;
     -moz-border-radius-bottomright: 3px;
@@ -1170,6 +1182,12 @@ hr.line.align-right {
     color: @font-swatch4-color;
     padding: 20px;
     text-align:center;
+    border-top:80px solid @color-swatch4;
+    background-color: @color-swatch2;
+    margin-bottom:20px;
+      background-image: image('/images/twitterlogo.png');
+  background-repeat:no-repeat;
+  background-position: top center;
 }
 
 .widget.twitter ul li:last-child {
@@ -1220,9 +1238,12 @@ hr.line.align-right {
     background-position: top 16px center;
     padding-top:80px;
     margin-top:20px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+-webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.contactform fieldset label {
@@ -1239,8 +1260,8 @@ hr.line.align-right {
 }
 
 .widget.contactform fieldset input {
-    width: 100%;
-    height: 64px;
+    width: 48.8%;
+    height: 121px;
     padding: 0;
     border: none;
     font-family: @font-swatch5-font-family;
@@ -1248,13 +1269,20 @@ hr.line.align-right {
     color: @font-swatch4-color;
     text-indent: 12px;
     border:0;
-    background-color: @color-swatch2;
-    border-bottom:1px solid darken(@color-swatch2,5%);
+    background-color: @color-swatch1;
+    float:left;
+    margin-left:10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+        -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+-webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.contactform fieldset textarea {
     height: 108px;
-    width: 100%;
+    width: 48%;
     font-family: @font-swatch5-font-family;
     font-size: @font-swatch5-font-size;
     color: @font-swatch4-color;
@@ -1262,7 +1290,15 @@ hr.line.align-right {
     padding: 14px 0px 0px 0px;
     border:0;
     resize: none;
-    background-color:@color-swatch2;
+    background-color:@color-swatch1;
+    float:right;
+    margin-right:10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+        -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+-webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.contactform fieldset input:focus, .widget.contactform fieldset textarea:focus {
@@ -1297,7 +1333,10 @@ hr.line.align-right {
     color: @font-swatch7-color;
     font-size: .9em;
     width:100%;
-    margin-top:-3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top:5px;
 }
   
 .widget.contactform fieldset button.btn:hover {
@@ -1349,7 +1388,7 @@ hr.line.align-right {
 }
 
 .widget.tweet a {
-  padding: 17px 36px 17px 18px;
+  padding: 37px 23px 17px 22px;
   background-image: image('/images/twitter.png');
   background-repeat: no-repeat;
   margin: 2.2em auto;
@@ -1362,14 +1401,15 @@ hr.line.align-right {
   text-decoration: none;
   letter-spacing: @font-swatch7-letter-spacing;
   background-position: center right 10px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-position: top center;
+  border-top: 20px solid @color-swatch4;
+  -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
-
-.widget.tweet a:hover{
-  background-color: darken(@color-swatch4,5%);
-} 
 
 /* ==================================
    SOCIAL ICONS
@@ -1400,9 +1440,12 @@ hr.line.align-right {
     height: 40px;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+    -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+    webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .widget.socialicons span a:hover,
@@ -1440,14 +1483,11 @@ hr.line.align-right {
     height: 40px;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
 }
 
 .widget.socialicons span a:hover, .widget.profile 
 .bk-profile-socialicons span a:hover {
-    background-color: @color-swatch4;
+    background-color: darken(@color-swatch4,5%);
 }
 
 header .widget.socialicons, .widget.profile .bk-profile-socialicons{
@@ -1459,14 +1499,11 @@ footer .widget.profile .bk-profile-socialicons{
 }
 
 .widget.socialicons span a {
-  background-color:@color-swatch3;
-      -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+  background-color:@color-swatch4;
 }
 
 .widget.socialicons span a:hover {
-  background-color:darken(@color-swatch3,5%);
+  background-color:darken(@color-swatch4,5%);
 }
 
 /* SVG ICONS */
@@ -2052,7 +2089,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     .widget.contactform fieldset input,
     .widget.contactform fieldset label,
     .widget.contactform fieldset textarea {
-        width: 100%;
     }
 
     .widget.contactform fieldset button.btn {
