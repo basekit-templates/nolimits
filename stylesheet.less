@@ -407,11 +407,13 @@ footer p {
   display: block;
   padding: 36px 70px;
   font-family:@font-swatch6-font-family;
-  font-size:@font-swatch2-font-size;
+  font-size:@font-swatch6-font-size;
   font-weight: @font-swatch6-font-weight;
   color: @font-swatch6-color;
   line-height:@font-swatch6-line-height;
-  letter-spacing: 1.5px;;
+  letter-spacing: 1px;
+  text-shadow: 5px 4px 0px rgba(0,0,0,0.1);
+
 }
 
 .widget.extendednavigation ul li a:hover, .widget.extendednavigation ul li.folder .text:hover {
@@ -423,11 +425,11 @@ footer p {
 /* FOLDER */
 
 .widget.extendednavigation ul li.folder {
-  padding-right: 8px;
   background-image: image('/images/nav-arrow.png');
-  background-position: right 41px;
+  background-position: right 46px;
   background-repeat: no-repeat;
   cursor: pointer;
+  font-size:@font-swatch4-font-size;
 }     
 
 .widget.extendednavigation ul li.folder:hover {
@@ -443,7 +445,7 @@ footer p {
 .widget.extendednavigation li:hover > ul {
   display: block;
   position: absolute;
-  background-color: @color-swatch7;
+  background-color: lighten(@color-swatch4,5%);
   z-index: 500;
   padding:10px 0px;
 }
@@ -468,6 +470,7 @@ footer p {
   background-image: image('/images/arrow-left.png');
   background-position: left center;
   background-repeat: no-repeat;
+  font-size:@font-swatch4-font-size;
 }
 
 
@@ -621,6 +624,7 @@ footer p {
   display: inherit;
   border-bottom: 0;
   padding-bottom: 0;
+  text-shadow: 5px 4px 0px rgba(0,0,0,0.1);
 }
 
 /* FEATURE STRAPLINE */
@@ -646,7 +650,7 @@ footer p {
   margin: 0px auto;
   padding: 8px 28px 8px 14px;
   border: 0;
-  background-color: @font-swatch6-background-color;
+  background-color: @font-swatch7-background-color;
   font-family: @font-swatch7-font-family;
   font-weight:@font-swatch7-font-weight;
   line-height: @font-swatch7-line-height;
@@ -658,6 +662,9 @@ footer p {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.feature button:hover 
@@ -1182,12 +1189,18 @@ hr.line.align-right {
     color: @font-swatch4-color;
     padding: 20px;
     text-align:center;
-    border-top:80px solid @color-swatch4;
+    border-top:40px solid @color-swatch4;
     background-color: @color-swatch2;
     margin-bottom:20px;
-      background-image: image('/images/twitterlogo.png');
-  background-repeat:no-repeat;
-  background-position: top center;
+    background-image: image('/images/twitterlogo.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.twitter ul li:last-child {
@@ -1227,23 +1240,22 @@ hr.line.align-right {
 
 .widget.contactform fieldset {
     border: none;
-    margin: 0;
-    background-color:@color-swatch4;
     margin-bottom:20px;
-    padding: 0px;
+    padding: 20px;
     list-style: none;
-    background-image: image('/images/send-icon.png');
-    background-repeat:no-repeat;
-    background-color:@color-swatch4;
-    background-position: top 16px center;
-    padding-top:80px;
+    background-color:@color-swatch2;
+    background-position: top 7px center;
     margin-top:20px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
--webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+    border-top:40px solid @color-swatch4;
+      background-image: image('/images/envelope.png');
+  background-repeat:no-repeat;
+  background-position: top 17px center;
 }
 
 .widget.contactform fieldset label {
@@ -1260,29 +1272,28 @@ box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.contactform fieldset input {
-    width: 48.8%;
+    width: 49%;
     height: 121px;
     padding: 0;
     border: none;
     font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
+    font-size: 17px;
     color: @font-swatch4-color;
     text-indent: 12px;
     border:0;
     background-color: @color-swatch1;
     float:left;
-    margin-left:10px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-        -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
--webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.contactform fieldset textarea {
     height: 108px;
-    width: 48%;
+    width: 49%;
     font-family: @font-swatch5-font-family;
     font-size: @font-swatch5-font-size;
     color: @font-swatch4-color;
@@ -1292,13 +1303,12 @@ box-shadow: 5px 5px rgba(0,0,0,0.1);
     resize: none;
     background-color:@color-swatch1;
     float:right;
-    margin-right:10px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-        -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
--webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.contactform fieldset input:focus, .widget.contactform fieldset textarea:focus {
@@ -1328,19 +1338,21 @@ box-shadow: 5px 5px rgba(0,0,0,0.1);
     font-family: @font-swatch7-font-family;
     font-weight:@font-swatch7-font-weight;
     line-height: @font-swatch7-line-height;
-    letter-spacing: @font-swatch7-letter-spacing;
-    background-color: @color-swatch4;
-    color: @font-swatch7-color;
-    font-size: .9em;
+    background-color: @color-swatch1;
+    color: @font-swatch4-color;
+    font-size: @font-swatch7-font-size;
     width:100%;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    margin-top:5px;
+    margin-top:20px;
+    -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
   
 .widget.contactform fieldset button.btn:hover {
-  background-color: darken(@color-swatch4,5%);
+  background-color: darken(@color-swatch2,5%);
   cursor: pointer;
 }
 
@@ -1394,13 +1406,45 @@ box-shadow: 5px 5px rgba(0,0,0,0.1);
   margin: 2.2em auto;
   border:0;
   background-color: @color-swatch4;
-  font-family: @font-swatch5-font-family;
-  font-size: @font-swatch5-font-size;
-  font-weight:@font-swatch5-font-weight;
-  color: @font-swatch8-color;
-  text-decoration: none;
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight:@font-swatch7-font-weight;
+  line-height: @font-swatch7-line-height;
   letter-spacing: @font-swatch7-letter-spacing;
+  color: @font-swatch7-color;
+  text-decoration: none;
   background-position: center right 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-position: top center;
+  border-top: 20px solid @color-swatch4;
+  -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px rgba(0,0,0,0.1);
+}
+
+/* ===============================
+   DROPBOX WIDGET
+   =============================== */
+
+ .widget.dropbox .b-wrap .btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-position: top center;
+  border-top: 20px solid @color-swatch4;
+  -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px rgba(0,0,0,0.1);
+}
+
+/* ===============================
+   PAYPAL BUTTON
+   =============================== */
+
+
+.widget.paypalbuynow .widget.button.paypal {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -1651,12 +1695,12 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     text-indent: 20px;
     border: 1px solid @color-swatch1;
     max-width: 300px;
-    -webkit-border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-bottomleft: 3px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.profile form input:focus {
@@ -1676,17 +1720,17 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     color: @font-swatch8-color;
     font-size: 1em;
     position: relative;
-    -webkit-border-top-right-radius: 3px;
-    -webkit-border-bottom-right-radius: 3px;
-    -moz-border-radius-topright: 3px;
-    -moz-border-radius-bottomright: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     background-image: image('/images/button-arrow.png');
     background-position: right center;
     background-repeat: no-repeat;
     padding: 7px 44px 7px 14px;
     border: 0;
+    -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.profile form button:hover {
@@ -1739,18 +1783,18 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     height: 51px;
     padding: 0;
     font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
+    font-size: 18px;
     color: @font-swatch4-color;
-    text-indent: 20px;
+    text-indent: 15px;
     border:0;
     background-color:@color-swatch2;
     max-width: 189px;
-    -webkit-border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-bottomleft: 3px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.signupform fieldset input:focus {
@@ -1763,20 +1807,19 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   background-repeat: no-repeat;
   padding: 8px 44px 7px 14px;
   border: 0;
-  background-color: @font-swatch6-background-color;
+  background-color: @color-swatch4;
   font-family: @font-swatch7-font-family;
   font-size: @font-swatch7-font-size;
   font-weight:@font-swatch7-font-weight;
   line-height: @font-swatch7-line-height;
   letter-spacing: @font-swatch7-letter-spacing;
   color: @font-swatch7-color;
-  -webkit-border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomright: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  margin-left:-6px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.signupform button:hover {
@@ -1816,7 +1859,8 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     left:0;
     right:0;
     top:auto;
-    background-color: @color-swatch3; 
+    background-color:@color-swatch2;
+    text-align: center;
 }
 
 .widget.responsiveslideshow .title {
@@ -1826,7 +1870,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     font-size:@font-swatch5-font-size;
     font-weight: @font-swatch5-font-weight;
     line-height:bkscale(@font-swatch5-line-height, 0.55);
-    color: @color-swatch1;
+    color: @font-swatch4-color;
     letter-spacing: @font-swatch5-letter-spacing;
 }
 
@@ -1837,7 +1881,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     font-size:@font-swatch5-font-size;
     font-weight: @font-swatch5-font-weight;
     line-height:bkscale(@font-swatch5-line-height, 0.55);
-    color: @color-swatch1;
+    color: @font-swatch4-color;
     letter-spacing: @font-swatch5-letter-spacing;
 }
 
@@ -2031,6 +2075,10 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
         background-image: image('/images/arrow-left-wh.png');
         background-position: left center;
         background-repeat: no-repeat;
+    }
+
+    .navbar {
+    height:40px;
     }
 
     /* EXTENDED NAVIGATION - INSIDE ZONE */
@@ -2254,6 +2302,10 @@ line-height: bkscale(@font-swatch8-line-height,0.4);
         background-repeat: no-repeat;
     }
 
+    .navbar {
+    height:40px;
+    }
+
      /* GALLERY */
     
     .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
@@ -2375,4 +2427,6 @@ line-height: bkscale(@font-swatch8-line-height,0.4);
 .clearfix {
   *zoom: 1;
 }
+
+
 
