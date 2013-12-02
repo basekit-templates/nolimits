@@ -29,7 +29,7 @@
         },
         "Swatch 3": {
             "color1":"#ffffff",
-            "color2":"#f2f2f2",
+            "color2":"#eeeeee",
             "color3":"#000000",
             "color4":"#01b0f1",
             "color5":"#01b0f1",
@@ -38,7 +38,7 @@
         },
         "Swatch 4": {
             "color1":"#ffffff",
-            "color2":"#f2f2f2",
+            "color2":"#eeeeee",
             "color3":"#000000",
             "color4":"#263248",
             "color5":"#b5b5b5",
@@ -136,7 +136,7 @@
         },
         "font10": {
             "font-family": "Oswald",
-            "font-size": "20px",
+            "font-size": "24px",
             "font-weight": "700",
             "line-height": "44px",
             "color": "@color-swatch1",

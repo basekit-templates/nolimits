@@ -125,7 +125,7 @@ blockquote:after {
    CUSTOM CSS
    =============================== */
 
-  .centeralign{
+  .logobox{
     background-color: @color-swatch4;
     height:100px;
     max-width:180px;
@@ -161,7 +161,7 @@ blockquote:after {
   background-color: @color-swatch1;
   max-width: 1200px;
   width: 90%;
-  margin: 20px auto;
+  margin: 40px auto;
   padding: 0px;
   -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
   -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
@@ -199,6 +199,7 @@ header .widget.profile{
 
 .bk-pt-default .widget.extendednavigation {
   padding:26px 0px;
+  float:right;
 }
 
 .bk-pt-default .widget .extendednavigation a.pull {
@@ -228,6 +229,12 @@ header .widget.profile{
   float:none;
   margin:0px auto;
   display:table;
+}
+
+.bk-pt-default .widget.extendednavigation ul li a, .bk-pt-default .widget.extendednavigation ul li.folder .text, 
+{
+  padding:6px 20px;
+    font-size:24px;
 }
 
 /* ===============================
@@ -414,6 +421,8 @@ footer p {
   text-shadow: 5px 4px 0px rgba(0,0,0,0.1);
 
 }
+
+
 
 .widget.extendednavigation ul li a:hover, .widget.extendednavigation ul li.folder .text:hover {
   color: @font-swatch6-color-hover;
@@ -622,7 +631,7 @@ footer p {
   color: @font-swatch8-color;
   display: inherit;
   border-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 20px;
   text-shadow: 5px 4px 0px rgba(0,0,0,0.1);
 }
 
@@ -636,6 +645,8 @@ footer p {
   letter-spacing:@font-swatch9-letter-spacing;
   color: @font-swatch9-color;
   display: inline-block;
+  padding-top:20px;
+  border-top:1px solid @color-swatch1;
 }
 
 /* FEATURE BUTTON */
@@ -649,26 +660,19 @@ footer p {
   margin: 0px auto;
   padding: 8px 28px 8px 14px;
   border: 0;
-  background-color: @font-swatch7-background-color;
+  background-color: transparent;
   font-family: @font-swatch7-font-family;
   font-weight:@font-swatch7-font-weight;
   line-height: @font-swatch7-line-height;
   letter-spacing: @font-swatch7-letter-spacing;
   color: @font-swatch7-color;
-  font-size: .9em;
+  font-size: @font-swatch7-font-size;
   text-decoration: none;
-  margin-top:10px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
-  box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .widget.feature button:hover 
 {
-  background-color: darken(@font-swatch7-background-color,5%);
+  color: @font-swatch8-color;
   cursor: pointer;
 }
 
@@ -1712,11 +1716,11 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: darken(@color-swatch4,10%);
+    background-color: @color-swatch2;
     font-family: @font-swatch7-font-family;
     font-weight: @font-swatch7-font-weight;
     letter-spacing: @font-swatch7-letter-spacing;
-    color: @font-swatch8-color;
+    color: @font-swatch4-color;
     font-size: 1em;
     position: relative;
     -webkit-border-radius: 5px;
@@ -1725,15 +1729,16 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     background-image: image('/images/button-arrow.png');
     background-position: right center;
     background-repeat: no-repeat;
-    padding: 7px 44px 7px 14px;
+    padding: 10px 35px 8px 14px;
     border: 0;
     -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
     -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
     box-shadow: 5px 5px rgba(0,0,0,0.1);
+    margin-left:10px;
 }
 
 .widget.profile form button:hover {
-    background-color: darken(@color-swatch4,20%);
+    background-color: darken(@color-swatch2,10%);
     cursor: pointer;
 }
 
@@ -1804,7 +1809,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   background-image: image('/images/button-arrow.png');
   background-position: right center;
   background-repeat: no-repeat;
-  padding: 8px 44px 7px 14px;
+  padding: 8px 35px 8px 14px;
   border: 0;
   background-color: @color-swatch4;
   font-family: @font-swatch7-font-family;
@@ -1819,6 +1824,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
   -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
   box-shadow: 5px 5px rgba(0,0,0,0.1);
+  margin-left:5px;
 }
 
 .widget.signupform button:hover {
@@ -1978,7 +1984,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     display:none;
   }
 
-  .centeralign{
+  .logobox{
     margin:0px auto;
     display:table;
   }
@@ -1999,7 +2005,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 
   .widget .extendednavigation a.pull {
     display: block;
-    width: 12%;
+    width: 6%;
     position: relative;
     margin:0px auto;
     top:61px;
@@ -2074,10 +2080,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
         background-image: image('/images/arrow-left-wh.png');
         background-position: left center;
         background-repeat: no-repeat;
-    }
-
-    .navbar {
-    height:40px;
     }
 
     /* EXTENDED NAVIGATION - INSIDE ZONE */
@@ -2193,7 +2195,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     display:none;
   }
 
-  .centeralign{
+  .logobox{
     display:table;
     margin:0px auto;
   }
@@ -2241,7 +2243,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 line-height: bkscale(@font-swatch8-line-height,0.4);
   }
 
-    /* NAV */
+ /* NAV */
 
     .widget .extendednavigation ul {
         width: -10%;
@@ -2301,8 +2303,8 @@ line-height: bkscale(@font-swatch8-line-height,0.4);
         background-repeat: no-repeat;
     }
 
-    .navbar {
-    height:40px;
+    .widget .extendednavigation a.pull {
+      width:13%;
     }
 
      /* GALLERY */
