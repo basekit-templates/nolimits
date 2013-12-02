@@ -128,7 +128,7 @@ blockquote:after {
   .logobox{
     background-color: @color-swatch4;
     height:100px;
-    max-width:180px;
+    width:30%;
     padding:0px 0px 0px 20px;
     -webkit-border-bottom-right-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
@@ -139,6 +139,7 @@ blockquote:after {
     -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
     -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
     box-shadow: 5px 5px rgba(0,0,0,0.1);
+    margin:0px auto;
   }
 
 .navbar {
@@ -225,11 +226,11 @@ header .widget.profile{
   min-height:68px;
 }
 
-.footerphone {
+.footer {
   float:none;
   margin:0px auto;
   display:table;
-  margin-top:15px;
+  margin-top:20px;
 }
 
 .bk-pt-default .widget.extendednavigation ul li a, .bk-pt-default .widget.extendednavigation ul li.folder .text, 
@@ -389,7 +390,7 @@ footer p {
 }
 
 .widget.extendednavigation ul li:hover ul li {
-  background-color:@color-swatch4;
+  background-color:lighten(@color-swatch4,5%);
 }
 
 /* ALIGNMENTS */
@@ -636,7 +637,7 @@ footer p {
   color: @font-swatch8-color;
   display: inherit;
   border-bottom: 0;
-  padding-bottom: 20px;
+  margin-bottom: 10px;
   text-shadow: 5px 4px 0px rgba(0,0,0,0.1);
 }
 
@@ -662,7 +663,7 @@ footer p {
   background-repeat: no-repeat;
   margin: 0px auto;
   padding: 8px 28px 8px 14px;
-  border: 0;
+  border: 1px solid @color-swatch1;
   background-color: transparent;
   font-family: @font-swatch7-font-family;
   font-weight:@font-swatch7-font-weight;
@@ -671,6 +672,7 @@ footer p {
   color: @font-swatch7-color;
   font-size: @font-swatch7-font-size;
   text-decoration: none;
+  margin-top:10px;
 }
 
 .widget.feature button:hover 
@@ -1991,6 +1993,10 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     display:table;
   }
 
+  .widget.feature .content .spare {
+  max-width:none;
+}
+
   /* NAV */
 
   .widget.extendednavigation {
@@ -2207,6 +2213,10 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     margin:0px auto;
   }
 
+  .widget.companyname a {
+    font-size: bkscale(@font-swatch10-font-size,0.7);
+  }
+
   /* UL ALIGN RIGHT */
 
   .widget.extendednavigation ul.align-right li.folder {
@@ -2232,10 +2242,11 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   .widget.feature h2 {
     font-size: bkscale(@font-swatch8-font-size,0.5);
     line-height: bkscale(@font-swatch8-line-height,0.5);
+    margin-bottom:none;
   }
 
   .widget.feature h3 {
-    font-size: bkscale(@font-swatch9-font-size,0.9);
+    font-size: bkscale(@font-swatch9-font-size,0.8);
   }
 
   .widget.feature button {
