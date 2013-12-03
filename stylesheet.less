@@ -2073,7 +2073,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 
     .widget.extendednavigation ul li:hover > ul {
         display: block!important;
-        width: 95%;
+        width: 100%;
         bottom: inherit;
         padding: 0;
         background-color: darken(@color-swatch4,5%);
@@ -2091,8 +2091,13 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     }
 
     .navbar {
-    background-color:@color-swatch4;
-    height:40px;
+      background-color:@color-swatch4;
+      height:40px;
+    }
+
+    .widget.extendednavigation ul li, .widget.extendednavigation li:hover ul li 
+    {
+      background-color:@color-swatch4;
     }
 
     /* EXTENDED NAVIGATION - INSIDE ZONE */
@@ -2304,7 +2309,7 @@ line-height: bkscale(@font-swatch8-line-height,0.4);
 
     .widget.extendednavigation ul li:hover > ul {
         display: block!important;
-        width: 95%;
+        width: 100%;
         bottom: inherit;
         padding: 0;
         background-color: darken(@color-swatch4,5%);
@@ -2328,6 +2333,11 @@ line-height: bkscale(@font-swatch8-line-height,0.4);
     .navbar {
     background-color:@color-swatch4;
     height:40px;
+    }
+
+    .widget.extendednavigation ul li, .widget.extendednavigation li:hover ul li 
+    {
+      background-color:@color-swatch4;
     }
 
      /* GALLERY */
