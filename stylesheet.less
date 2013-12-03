@@ -225,7 +225,6 @@ header .widget.profile{
   float:none;
   margin:0px auto;
   display:table;
-  margin-top:20px;
 }
 
 .bk-pt-default .widget.extendednavigation ul li a, .bk-pt-default .widget.extendednavigation ul li.folder .text, 
@@ -455,7 +454,13 @@ footer p {
   position: absolute;
   background-color: lighten(@color-swatch4,5%);
   z-index: 500;
-  padding:20px 70px 20px 70px;
+  padding:20px 0px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .widget.extendednavigation li:hover > ul li {
@@ -1190,7 +1195,6 @@ hr.line.align-right {
     color: @font-swatch4-color;
     padding: 20px;
     text-align:center;
-    border-top:40px solid @color-swatch4;
     background-color: @color-swatch2;
     margin-bottom:20px;
     background-image: image('/images/twitterlogo.png');
@@ -1253,10 +1257,9 @@ hr.line.align-right {
     -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
     -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
     box-shadow: 5px 5px rgba(0,0,0,0.1);
-    border-top:40px solid @color-swatch4;
-      background-image: image('/images/envelope.png');
-  background-repeat:no-repeat;
-  background-position: top 17px center;
+    background-image: image('/images/envelope.png');
+    background-repeat:no-repeat;
+    background-position: top 17px center;
 }
 
 .widget.contactform fieldset label {
@@ -1339,8 +1342,7 @@ hr.line.align-right {
     font-family: @font-swatch7-font-family;
     font-weight:@font-swatch7-font-weight;
     line-height: @font-swatch7-line-height;
-    background-color: @color-swatch1;
-    color: @font-swatch4-color;
+    color: @font-swatch7-color;
     font-size: @font-swatch7-font-size;
     width:100%;
     -webkit-border-radius: 5px;
@@ -2334,7 +2336,7 @@ line-height: bkscale(@font-swatch8-line-height,0.4);
 
     .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
       padding: 12px;
-      font-size:bkscale(@font-swatch6-font-size,0.6);
+      font-size:bkscale(@font-swatch6-font-size,0.7);
     }
 
      /* GALLERY */
