@@ -22,7 +22,7 @@
             "color1":"#ffffff",
             "color2":"#eeeeee",
             "color3":"#000000",
-            "color4":"#959595",
+            "color4":"#4ecdc4",
             "color5":"#cfcfcf",
             "color6":"#ffffff",
             "color7":"#000000"
@@ -40,7 +40,7 @@
             "color1":"#ffffff",
             "color2":"#eeeeee",
             "color3":"#000000",
-            "color4":"#263248",
+            "color4":"#ff8699",
             "color5":"#cfcfcf",
             "color6":"#ffffff",
             "color7":"#000000"
@@ -49,7 +49,7 @@
             "color1":"#ffffff",
             "color2":"#eeeeee",
             "color3":"#000000",
-            "color4":"#000000",
+            "color4":"#282828",
             "color5":"#cfcfcf",
             "color6":"#ffffff",
             "color7":"#000000"
@@ -120,9 +120,9 @@
         },
         "font8": {
             "font-family": "Oswald",
-            "font-size": "57px",
+            "font-size": "80px",
             "font-weight": "700",
-            "line-height": "80px",
+            "line-height": "100px",
             "color": "@color-swatch3",
             "letter-spacing": "3px"
         },

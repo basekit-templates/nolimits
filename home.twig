@@ -8,8 +8,10 @@
         <header>
             <div class="wrapper clearfix">
                 <div class="logobox">
-                    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-                    {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+                    <div class="logowrapper">
+                        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+                        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+                    </div>
                 </div>
             </div>
         </header>
@@ -22,6 +24,7 @@
 
 <div class="canvas">
     <div class="main wrapper clearfix">
+        <h1> Home </h1>
         {{zone('main')|raw}}
     </div>
 </div>

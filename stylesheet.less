@@ -128,7 +128,7 @@ blockquote:after {
   .logobox{
     background-color: @color-swatch4;
     height:100px;
-    width:20%;
+    width:200px;
     padding:0px 0px 0px 20px;
     -webkit-border-bottom-right-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
@@ -139,6 +139,10 @@ blockquote:after {
     -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
     -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
     box-shadow: 5px 5px rgba(0,0,0,0.1);
+    margin:0px auto;
+  }
+
+  .logowrapper {
     margin:0px auto;
   }
 
@@ -623,6 +627,7 @@ footer p {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
+  margin-top:40px;
 }
 
 /* FEATURE TITLE */
@@ -660,7 +665,7 @@ footer p {
   background-position: right center;
   background-repeat: no-repeat;
   margin: 0px auto;
-  padding: 8px 28px 8px 14px;
+  padding: 3px 28px 3px 14px;
   border: 1px solid @color-swatch1;
   background-color: transparent;
   font-family: @font-swatch7-font-family;
@@ -1161,12 +1166,12 @@ hr.line.align-right {
 
 .widget.twitter a {
    font-family: @font-swatch5-font-family;
-   color: @font-swatch4-color;
+   color: @color-swatch4;
    font-size:@font-swatch5-font-size;
 }
 
 .widget.twitter .twitter-content p {
-  color: @font-swatch4-color;
+  color: @color-swatch4;
   padding: 0;
 }
 
@@ -1219,13 +1224,13 @@ hr.line.align-right {
 
 .widget.twitter .twitter-content span.bk-full-name {
     font-family: @font-swatch8-font-family;
-    color: @font-swatch4-color;
+    color: @color-swatch4;
     font-size: @font-swatch4-font-size;
     font-weight:@font-swatch8-font-weight;
 }
 
 .widget.twitter .twitter-content time, .widget.twitter .twitter-content span {
-  color: @font-swatch4-color;
+  color: @color-swatch4;
 }
 
 .widget.twitter img{
@@ -1259,7 +1264,8 @@ hr.line.align-right {
     box-shadow: 5px 5px rgba(0,0,0,0.1);
     background-image: image('/images/envelope.png');
     background-repeat:no-repeat;
-    background-position: top 17px center;
+    background-position: top -18px center;
+    border-top:20px solid @color-swatch2;
 }
 
 .widget.contactform fieldset label {
@@ -1355,7 +1361,7 @@ hr.line.align-right {
 }
   
 .widget.contactform fieldset button.btn:hover {
-  background-color: darken(@color-swatch2,5%);
+  background-color: darken(@font-swatch7-background-color,5%);
   cursor: pointer;
 }
 
@@ -2211,6 +2217,8 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   .logobox{
     display:table;
     margin:0px auto;
+    width:160px;
+    height:90px;
   }
 
   .widget.companyname a {
@@ -2240,8 +2248,8 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   }
 
   .widget.feature h2 {
-    font-size: bkscale(@font-swatch8-font-size,0.5);
-    line-height: bkscale(@font-swatch8-line-height,0.5);
+    font-size: bkscale(@font-swatch8-font-size,0.4);
+    line-height: bkscale(@font-swatch8-line-height,0.4);
     margin-bottom:none;
   }
 
