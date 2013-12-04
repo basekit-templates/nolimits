@@ -198,18 +198,21 @@ header .widget.profile{
 }
 
 .bk-pt-default .widget.extendednavigation li:hover > ul {
-  bottom: inherit;
+  top:92px;
 }
 
 
 .bk-pt-default .widget.extendednavigation {
   padding:26px 0px;
-  float:right;
 }
 
 .bk-pt-default .widget .extendednavigation a.pull {
   width:100%;
   top:63px;
+}
+
+.bk-pt-default .widget.extendednavigation ul li:first-child {
+  margin-top:0px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -1042,7 +1045,7 @@ footer p {
 }
 
 hr.line {
-   background-color: lighten(@color-swatch5,23%);
+   background-color: @color-swatch2;
    height: 2px;
    width: 100%;
    border: none;
@@ -1269,8 +1272,8 @@ hr.line.align-right {
     box-shadow: 5px 5px rgba(0,0,0,0.1);
     background-image: image('/images/envelope.png');
     background-repeat:no-repeat;
-    background-position: top -18px center;
-    border-top:20px solid @color-swatch2;
+    background-position: top 17px center;
+    border-top:10px solid @color-swatch2;
 }
 
 .widget.contactform fieldset label {
@@ -1801,7 +1804,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     color: @font-swatch4-color;
     text-indent: 15px;
     border:0;
-    background-color:@color-swatch2;
+    background-color:@color-swatch1;
     max-width: 189px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -2123,6 +2126,10 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     .widget.extendednavigation li:hover > ul
     {
       top:52px;
+    }
+
+    .bk-pt-default .widget.extendednavigation {
+      float:none;
     }
 
      /* GALLERY */
