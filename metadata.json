@@ -128,7 +128,7 @@
         },
         "font9": {
             "font-family": "Oswald",
-            "font-size": "20px",
+            "font-size": "18px",
             "font-weight": "300",
             "line-height": "38px",
             "color": "@color-swatch1",
