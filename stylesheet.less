@@ -164,13 +164,6 @@ blockquote:after {
 
 .canvas  {
   background-color: @color-swatch1;
-  max-width: 1200px;
-  width: 90%;
-  margin: 40px auto;
-  padding: 0px;
-  -moz-box-shadow: 5px 5px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 5px 5px rgba(0,0,0,0.1);
-  box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 
 .main {
@@ -187,6 +180,10 @@ header .widget.profile{
 
 /* DEAFULT PAGE TYPES */
 
+.bk-pt-default .widget.extendednavigation ul li, .widget.extendednavigation li:hover ul li {
+  background-color:transparent!important;
+}
+
 .bk-pt-default .extendednavigation ul li:hover > ul {
 
 }
@@ -198,9 +195,13 @@ header .widget.profile{
 }
 
 .bk-pt-default .widget.extendednavigation li:hover > ul {
-  top:92px;
+  bottom: inherit;
+  background-color:lighten(@color-swatch4,5%);
 }
 
+.bk-pt-default .widget.extendednavigation ul li:first-child {
+  margin-top:0px;
+}
 
 .bk-pt-default .widget.extendednavigation {
   padding:26px 0px;
@@ -211,25 +212,15 @@ header .widget.profile{
   top:63px;
 }
 
-.bk-pt-default .widget.extendednavigation ul li:first-child {
-  margin-top:0px;
-}
-
-.bk-pt-default .widget.extendednavigation li:hover ul li:last-child
-{
-  border-bottom:none;
-}
-
 @media only screen and (max-width: 480px) {
 .bk-pt-default .widget .extendednavigation a.pull {
   width:100%;
-  top:87px;
+  top:88px;
   }
-  .bk-pt-default .widget.extendednavigation li:hover > ul {
-    top:63px;
-    padding:0;
-  }
-  .bk-pt-default .widget.extendednavigation {
+}
+
+@media only screen and (max-width: 480px) {
+.bk-pt-default .widget.extendednavigation {
   padding:0px 0px;
   }
 }
@@ -244,6 +235,10 @@ header .widget.profile{
 {
   padding:10px 20px;
   font-size:24px;
+}
+
+.bk-pt-default .widget.extendednavigation ul li.folder {
+  background-position: 112px 21px;
 }
 
 /* ===============================
@@ -377,12 +372,9 @@ footer p {
   color: @color-swatch3;
 }
 
-/* ===============================
-   EXTENDED NAVIGATION
-   =============================== */
-
 .widget.extendednavigation {
   position: relative;
+  max-width: 960px;
   margin:0px auto;
   display:table;
 }
@@ -396,8 +388,8 @@ footer p {
   padding: 0;
 }
 
-.widget.extendednavigation ul li:hover ul li {
-  background-color:lighten(@color-swatch4,5%);
+.widget.extendednavigation ul li, .widget.extendednavigation li:hover ul li{
+    background-color: @color-swatch4;
 }
 
 /* ALIGNMENTS */
@@ -424,17 +416,15 @@ footer p {
 
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
   display: block;
-  padding: 36px 70px;
+  padding: 30px 50px;
   font-family:@font-swatch6-font-family;
   font-size:@font-swatch6-font-size;
   font-weight: @font-swatch6-font-weight;
   color: @font-swatch6-color;
   line-height:@font-swatch6-line-height;
-  letter-spacing: 1px;
-  text-shadow: 5px 4px 0px rgba(0,0,0,0.1);
+  letter-spacing: 1.5px;
+  text-shadow: 5px 4px 0px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .widget.extendednavigation ul li a:hover, .widget.extendednavigation ul li.folder .text:hover {
   color: @font-swatch6-color-hover;
@@ -446,10 +436,9 @@ footer p {
 
 .widget.extendednavigation ul li.folder {
   background-image: image('/images/nav-arrow.png');
-  background-position: right 46px;
+  background-position: right 41px;
   background-repeat: no-repeat;
   cursor: pointer;
-  font-size:@font-swatch4-font-size;
 }     
 
 .widget.extendednavigation ul li.folder:hover {
@@ -467,19 +456,11 @@ footer p {
   position: absolute;
   background-color: lighten(@color-swatch4,5%);
   z-index: 500;
-  padding:20px 0px;
-  -webkit-border-bottom-right-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
 }
 
 .widget.extendednavigation li:hover > ul li {
   display: block;
   width: 100%;
-  padding: 0 32px 0;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
@@ -492,12 +473,11 @@ footer p {
 }
 
 .widget.extendednavigation ul li:hover > ul li .text {
-  padding: 4px 0 0 20px;
-  background-image: image('/images/arrow-left.png');
   background-position: left center;
   background-repeat: no-repeat;
-  font-size:@font-swatch4-font-size;
 }
+
+
 
 
 /* ===============================
@@ -624,11 +604,11 @@ footer p {
 }
 
 .widget.feature .feature-bgimg {
-  height: 800px;
+  height: 700px;
  }
 
 .widget.feature .content {
-  height: 800px;
+  height: 700px;
   text-align: center;
 }
 
@@ -674,15 +654,15 @@ footer p {
   background-position: right center;
   background-repeat: no-repeat;
   margin: 0px auto;
-  padding: 3px 28px 3px 14px;
-  border: 1px solid @color-swatch1;
+  padding: 3px 28px 6px 14px;
+  border: 0;
   background-color: transparent;
   font-family: @font-swatch7-font-family;
   font-weight:@font-swatch7-font-weight;
   line-height: @font-swatch7-line-height;
   letter-spacing: @font-swatch7-letter-spacing;
   color: @font-swatch7-color;
-  font-size: @font-swatch7-font-size;
+  font-size: @font-swatch3-font-size;
   text-decoration: none;
   margin-top:10px;
 }
@@ -2096,7 +2076,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     }
 
     .widget.extendednavigation ul li:hover > ul li {
-        padding: 30px 14px;
+        padding: 20px 14px;
     }
 
     .widget.extendednavigation ul li:hover > ul li .text, .widget.extendednavigation ul li:hover > ul li.folder .text {
@@ -2285,17 +2265,18 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   }
 
   .widget.feature h2 {
-    font-size: bkscale(@font-swatch8-font-size,0.4);
-    line-height: bkscale(@font-swatch8-line-height,0.4);
+    font-size: bkscale(@font-swatch8-font-size,0.5);
+    line-height: bkscale(@font-swatch8-line-height,0.5);
     margin-bottom:none;
   }
 
   .widget.feature h3 {
     font-size: bkscale(@font-swatch9-font-size,0.8);
+    line-height: bkscale(@font-swatch9-line-height,0.1);
   }
 
   .widget.feature button {
-
+    font-size: bkscale(@font-swatch9-font-size,0.9);
   }
 
   .widget.feature .content .spare{
@@ -2351,7 +2332,7 @@ line-height: bkscale(@font-swatch8-line-height,0.4);
     }
 
     .widget.extendednavigation ul li:hover > ul li {
-        padding: 30px 14px;
+        padding: 20px 14px;
     }
 
     .widget.extendednavigation ul li:hover > ul li .text, .widget.extendednavigation ul li:hover > ul li.folder .text {
