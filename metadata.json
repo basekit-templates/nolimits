@@ -2,6 +2,7 @@
     "name":"No Limits",
     "thumbnail":"nolimits.png",
     "screenshot":"nolimits.png",
+    "templateType":"standard",
     "tags": {
     "en": ["fullscreen", "light", "sports", "modern", "stylish", "running", "clean", "creative", "media", "sans-serif"],
     "es": ["pantalla completa", "oscuro", "fotografico", "moderno", "estilo", "agencia", "revista", "creativo", "elegante", "profesional", "sofisticado", "comunicacion", "sans-serif"],
